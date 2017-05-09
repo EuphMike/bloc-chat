@@ -1,10 +1,14 @@
 .new-room-button {
-    border: 5px solid Black;
+    border: 1px dotted orange;
     position: center;
 }
 
 .room-nav {
-    background-color: green;
+    background-color: grey;
     position: fixed;
     width: 50%;
+}
+
+.chat-section {
+   text-align: right;
 }
