@@ -10,12 +10,6 @@
 
     }
 
-    var time = firebase.database().ref("messages").child("1/sentAt");
-    
-    time.push({
-        sentAt: firebase.database.ServerValue.TIMESTAMP
-    });
-
       return Message;
   }
 

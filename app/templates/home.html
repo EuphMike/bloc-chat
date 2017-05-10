@@ -1,9 +1,12 @@
-<div class="room-nav">
-    <h1>Welcome to Bloc Chat</h1>
-    <span class="new-room-button" type="button" ng-click="home.addRoom()">New Room</span>
-    <div ng-repeat="room in home.rooms">
-        <p class="room-name" ng-click="home.setCurrentRoom(room)">{{ room.name }}</p>
-    </div>
+<div class = "channels" >
+  <div class="channels-header">
+      <h1 class= "title">BlocSlack</h1>
+      <h3 class= "subtitle">#Channels</h3>
+      <span class="new-room-button" type="button" ng-click="home.addRoom()">New Channel</span>
+  </div>
+      <div class = "channels-body" ng-repeat="room in home.rooms">
+          <p class="room-name" ng-click="home.setCurrentRoom(room)">{{ room.name }}</p>
+   </div>
 </div>
 
 <div class="chat-section">
