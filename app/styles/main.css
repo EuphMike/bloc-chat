@@ -47,8 +47,6 @@
   background-color: white;
 }
 
-
-
 .messages .username {
     font-weight: bold;
     float: left;
@@ -66,4 +64,15 @@
 
 .messages .username .sentAt {
     display: inline-block;
+}
+
+.message-field {
+    bottom: 0;
+    padding-bottom: 15px;
+    position: fixed;
+}
+
+.message-box {
+    width: 1800px;
+    float: right;
 }
