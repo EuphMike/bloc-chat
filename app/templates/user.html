@@ -4,9 +4,9 @@
     </div>
      <div class="modal-body">
          <h5 class="modal-prompt"> Who is it? </h5>
-             <input type="text" name="input" ng-model="modal.username" required>
-     </div>
-     <div class="modal-footer">
-         <button class="btn-new" type="button" ng-click="modal.createUsername()">Login</button>
+             <form name="myForm">
+             <input name="myUsername" type="text" name="input" ng-model="modal.username" required>
+           <button name="loginButton" class="btn-new" type="button" ng-click="modal.createUsername()"  ng-disabled="myForm.$invalid" >Login</button>
+         </form>
      </div>
  </section>
