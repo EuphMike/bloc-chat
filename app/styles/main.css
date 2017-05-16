@@ -10,6 +10,7 @@
     height: 100%;
     background-image: url(/styles/assets/1.jpg);
     background-repeat: repeat;
+    width: 270px;
     font-family: 'Gloria Hallelujah', cursive, Arial, sans-serif;
     color: #e66073;
     text-align: center;
@@ -18,6 +19,7 @@
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
+
 
 .channels-header {
     position: center;
@@ -183,6 +185,7 @@
   background-image:
   background-repeat: repeat;
   overflow: auto;
+  height: 90vh;
 
 }
 
