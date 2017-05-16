@@ -20,7 +20,8 @@
 
     home.sendMessage = function() {
         home.newMessage.roomId = home.currentRoom.$id;
-        home.newMessage.username = home.currentUser;
+        home.newMessage.username = $cookies.get('blocChatCurrentUser');
+        home.newMessage.sentAt = firebase.database.ServerValue.TIMESTAMP;
         Message.send(home.newMessage);
       }
     }
