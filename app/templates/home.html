@@ -1,7 +1,7 @@
 <div class = "channels" >
   <div class="channels-header">
-      <h1 class= "title">BlocSlack</h1>
-      <h3 class= "subtitle">#Channels</h3>
+      <h1 class= "title">Music Chat</h1>
+      <h3 class= "subtitle"></h3>
       <span class="new-room-button" type="button" ng-click="home.addRoom()">New Channel</span>
   </div>
       <div class = "channels-body" ng-repeat="room in home.rooms">
@@ -10,7 +10,7 @@
 </div>
 
 <div class="chat-section">
-    <h3 style=>{{ home.currentRoom.name }}</h3>
+    <h3 class= "roomTitle" style=>{{ home.currentRoom.name }}</h3>
     <div class="messages" ng-repeat="message in home.messages">
         <div class="username">{{ message.username }}</div>
         <div class="sentAt" >{{message.sentAt | date : "shortTime"}}</div>
